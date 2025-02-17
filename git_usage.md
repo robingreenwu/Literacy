@@ -84,3 +84,16 @@ https协议由于GitHub安全保护机制非常难连，所以我们一般使用
 
 在经过上述步骤后，我们就可以发现已经在github上成功的创建自己的仓库，打开即可进行观赏
 ![alt text](./image_git_usage/image-5.png)
+
+## 四、更简单的方法优化
+
+### 1、新建Repositories
+
+打开github中的Repositories，创建一个新的仓库
+![alt text](./image_git_usage/image-6.png)
+
+### 2、切换为SSH连接
+
+切换好后，直接复制代码在vscode的终端进行运行
+
+![alt text](./image_git_usage/image-7.png)
