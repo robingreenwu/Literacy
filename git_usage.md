@@ -31,7 +31,7 @@ https协议由于GitHub安全保护机制非常难连，所以我们一般使用
 在生成SSH密钥后，在用户目录下会出现.ssh文件，例如`C:\Users\xxx\.ssh`,.ssh文件中的id_rsa.pub是ssh的密钥，用记事本编辑打开复制。
 
 打开Github，进⼊ **Settings > SSH and GPG keys > New SSH key**，粘贴公钥并保存至**Key**中。(title可以随便取)
-![alt text](image.png)
+![alt text](./image_git_usage/image.png)
 
 ### 4、测试连接
 
@@ -66,21 +66,21 @@ https协议由于GitHub安全保护机制非常难连，所以我们一般使用
 ### 2、初始化仓库
 
 打开源代码管理，进入"初始化仓库"，对你想提交的项目进行命名后提交（一定要进行这个步骤，不然会卡亖！！！），如下图
-![alt text](image-2.png)
+![alt text](./image_git_usage/image-2.png)
 
 ### 3、直接发布Branch
 
 发布Branch后选择创建私人仓库（只能自己看）,还是创建公共仓库（可供别人参考）
-![alt text](image-3.png)
+![alt text](./image_git_usage/image-3.png)
 
 **重点注意：**
 
 在发布Branch时，如果你之前进行过科学上网，会导致网络代理出现问题，由于上面简单操作默认的是使用HTTPS 地址，具体呈现如下图：
-![alt text](image-4.png)
+![alt text](./image_git_usage/image-4.png)
 
 因此，我们需将其转化成SSH进行连接
 
 在终端命令行输入指令：`git remote set-url origin git@github.com:xxx/Literacy.git`
 
 在经过上述步骤后，我们就可以发现已经在github上成功的创建自己的仓库，打开即可进行观赏
-![alt text](image-5.png)
+![alt text](./image_git_usage/image-5.png)
