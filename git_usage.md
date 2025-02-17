@@ -37,7 +37,9 @@ https协议由于GitHub安全保护机制非常难连，所以我们一般使用
 
 在终端命令行输入指令：`ssh -T git@github.com`
 
-**重点注意：**在检测时容易出现如下错误：
+**重点注意：**
+
+在检测时容易出现如下错误：
 `ssh: connect to host github.com port 22: Connection timed out`
 
 为解决如上情况，我们在.ssh文件中新建config文件（用记事本即可），如果有，直接对其进行修改为
@@ -71,9 +73,14 @@ https协议由于GitHub安全保护机制非常难连，所以我们一般使用
 发布Branch后选择创建私人仓库（只能自己看）,还是创建公共仓库（可供别人参考）
 ![alt text](image-3.png)
 
-**重点注意：**在发布Branch时，如果你之前进行过科学上网，会导致网络代理出现问题，由于上面简单操作默认的是使用HTTPS 地址，具体呈现如下图：
+**重点注意：**
+
+在发布Branch时，如果你之前进行过科学上网，会导致网络代理出现问题，由于上面简单操作默认的是使用HTTPS 地址，具体呈现如下图：
 ![alt text](image-4.png)
 
 因此，我们需将其转化成SSH进行连接
 
 在终端命令行输入指令：`git remote set-url origin git@github.com:xxx/Literacy.git`
+
+在经过上述步骤后，我们就可以发现已经在github上成功的创建自己的仓库，打开即可进行观赏
+![alt text](image-5.png)
